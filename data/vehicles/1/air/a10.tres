@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="VehicleEntry" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://caehdahfx48it" path="res://src/shared/VehicleEntry.cs" id="1"]
+
+[resource]
+script = ExtResource("1")
+Name = "A-10 Thunderbolt (stand-in)"
+Class = 1
+Scene = NodePath("res://src/vehicles/Aircraft/airplane.tscn")

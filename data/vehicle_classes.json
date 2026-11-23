@@ -1,0 +1,40 @@
+{
+  "classes": {
+    "air": {
+      "id": 1,
+      "name": "Aircraft (stand-in)",
+      "max_speed": 45.0,
+      "turn_rate": 1.2,
+      "domain": 1,
+      "spawn_cost": 150.0,
+      "max_plausible_speed": 90.0
+    },
+    "ground": {
+      "id": 2,
+      "name": "Tank (stand-in)",
+      "max_speed": 18.0,
+      "turn_rate": 0.8,
+      "domain": 0,
+      "spawn_cost": 120.0,
+      "max_plausible_speed": 40.0
+    },
+    "naval": {
+      "id": 3,
+      "name": "Ship (stand-in)",
+      "max_speed": 22.0,
+      "turn_rate": 0.4,
+      "domain": 0,
+      "spawn_cost": 200.0,
+      "max_plausible_speed": 50.0
+    },
+    "heli": {
+      "id": 4,
+      "name": "Helicopter (stand-in)",
+      "max_speed": 32.0,
+      "turn_rate": 1.5,
+      "domain": 1,
+      "spawn_cost": 140.0,
+      "max_plausible_speed": 70.0
+    }
+  }
+}

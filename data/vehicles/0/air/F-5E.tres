@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="VehicleEntry" format=3 uid="uid://b1pq8b1pi3k07"]
+
+[ext_resource type="Script" uid="uid://caehdahfx48it" path="res://src/shared/VehicleEntry.cs" id="1_4sqd8"]
+
+[resource]
+script = ExtResource("1_4sqd8")
+Name = "F-5E"
+Scene = NodePath("res://src/vehicles/Aircraft/f5e.tscn")
+metadata/_custom_type_script = "uid://caehdahfx48it"

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dfb4rlo8fi0pe"]
+
+[ext_resource type="Script" uid="uid://cwwjk327dpnbq" path="res://src/server/Server.cs" id="1_clientnode"]
+
+[node name="Server" type="Node" unique_id=2125312497]
+
+[node name="Client" type="Node" parent="." unique_id=1850867023]
+script = ExtResource("1_clientnode")

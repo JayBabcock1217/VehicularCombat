@@ -1,0 +1,49 @@
+{
+  "comment": "Vehicle spawn catalog. Structure: factions -> { factionId -> { types -> { typeId -> { vehicles: [...] } } } }. Each vehicle is one spawnable entry: a display name, the vehicle-class id (drives motion/stats via data/vehicle_classes.json), and the client scene that renders it. Add factions, types, and vehicles freely — the editor panel (VehicleEditorPanel) reads and writes this file. domain is derived from the class id, so a type section's domain is implied by its vehicles' class_id.",
+  "factions": {
+    "0": {
+      "types": {
+        "air": {
+          "vehicles": [
+            {
+              "name": "A-10 Thunderbolt (stand-in)",
+              "class_id": 1,
+              "scene": "res://src/vehicles/Aircraft/airplane.tscn"
+            }
+          ]
+        },
+        "ground": {
+          "vehicles": []
+        },
+        "naval": {
+          "vehicles": []
+        },
+        "heli": {
+          "vehicles": []
+        }
+      }
+    },
+    "1": {
+      "types": {
+        "air": {
+          "vehicles": [
+            {
+              "name": "A-10 Thunderbolt (stand-in)",
+              "class_id": 1,
+              "scene": "res://src/vehicles/Aircraft/airplane.tscn"
+            }
+          ]
+        },
+        "ground": {
+          "vehicles": []
+        },
+        "naval": {
+          "vehicles": []
+        },
+        "heli": {
+          "vehicles": []
+        }
+      }
+    }
+  }
+}

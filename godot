@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Wrapper so `godot ...` resolves to your Godot 4.8-dev6 .NET build.
+# Put this file on your PATH (e.g. ~/.local/bin/godot) or source the
+# project's .env to add the directory.
+exec "/mnt/Crucial_4TB/Game Development/Godot/Godot_v4.8-dev6_mono_linux_x86_64/Godot_v4.8-dev6_mono_linux.x86_64" "$@"

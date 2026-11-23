@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dga7anfgviuu"]
+
+[ext_resource type="PackedScene" uid="uid://i6x5yxj4wvqw" path="res://src/vehicles/Aircraft/airplane.tscn" id="1_airplane"]
+[ext_resource type="PackedScene" uid="uid://btp0xipo3e3jg" path="res://Blender/ExportedModels/Vehicles/Aircraft/F-5E.glb" id="2_hc548"]
+[ext_resource type="Script" uid="uid://bcqryrr4bjgee" path="res://src/shared/components/JetEngine.cs" id="3_0vnvx"]
+[ext_resource type="Script" uid="uid://dktjasqgiw32s" path="res://src/shared/components/ComponentStats.cs" id="4_stats"]
+
+[sub_resource type="Resource" id="Resource_5ruah"]
+script = ExtResource("4_stats")
+Kind = 2
+Label = "J79-Turbojet"
+Mass = 800.0
+MaxThrust = 40000.0
+FuelFlowPerSec = 0.5
+FuelCapacity = 2000.0
+Blades = 0
+metadata/_custom_type_script = "uid://dktjasqgiw32s"
+
+[sub_resource type="BoxShape3D" id="col_shape"]
+size = Vector3(18, 3, 8)
+
+[node name="F5E" unique_id=1059067220 instance=ExtResource("1_airplane")]
+
+[node name="F-5E" parent="." index="1" unique_id=964380996 instance=ExtResource("2_hc548")]
+
+[node name="JetEngine" type="Node3D" parent="." index="2" unique_id=39027515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.427141, 0, 0)
+script = ExtResource("3_0vnvx")
+Stats = SubResource("Resource_5ruah")
+metadata/_custom_type_script = "uid://bcqryrr4bjgee"
+
+[node name="Collider" type="CollisionShape3D" parent="." index="3" unique_id=512001001]
+shape = SubResource("col_shape")
+
+[editable path="F-5E"]

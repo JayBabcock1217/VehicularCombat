@@ -1,0 +1,93 @@
+{
+  "comment": "Stage 0 procedural test zone bases. Positions are in the test zone's world space (a 2000x2000 area centered on origin). Two spawn bases (one per faction, deep territory), two contested mid bases, plus a factory and a resource site per faction to exercise the team economy.",
+  "bases": [
+    {
+      "id": "alpha_spawn",
+      "name": "Alpha Spawn Base",
+      "position": [-700.0, 0.0, -700.0],
+      "type": 0,
+      "hold_radius": 40.0,
+      "hold_duration": 15.0,
+      "defense_radius": 150.0,
+      "generation_rate": 5.0,
+      "owner_faction": 0
+    },
+    {
+      "id": "bravo_spawn",
+      "name": "Bravo Spawn Base",
+      "position": [700.0, 0.0, 700.0],
+      "type": 0,
+      "hold_radius": 40.0,
+      "hold_duration": 15.0,
+      "defense_radius": 150.0,
+      "generation_rate": 5.0,
+      "owner_faction": 1
+    },
+    {
+      "id": "alpha_factory",
+      "name": "Alpha Factory",
+      "position": [-500.0, 0.0, -300.0],
+      "type": 1,
+      "hold_radius": 35.0,
+      "hold_duration": 12.0,
+      "defense_radius": 120.0,
+      "generation_rate": 15.0,
+      "owner_faction": 0
+    },
+    {
+      "id": "bravo_factory",
+      "name": "Bravo Factory",
+      "position": [500.0, 0.0, 300.0],
+      "type": 1,
+      "hold_radius": 35.0,
+      "hold_duration": 12.0,
+      "defense_radius": 120.0,
+      "generation_rate": 15.0,
+      "owner_faction": 1
+    },
+    {
+      "id": "alpha_resource",
+      "name": "Alpha Resource Site",
+      "position": [-300.0, 0.0, -500.0],
+      "type": 2,
+      "hold_radius": 30.0,
+      "hold_duration": 10.0,
+      "defense_radius": 100.0,
+      "generation_rate": 20.0,
+      "owner_faction": 0
+    },
+    {
+      "id": "bravo_resource",
+      "name": "Bravo Resource Site",
+      "position": [300.0, 0.0, 500.0],
+      "type": 2,
+      "hold_radius": 30.0,
+      "hold_duration": 10.0,
+      "defense_radius": 100.0,
+      "generation_rate": 20.0,
+      "owner_faction": 1
+    },
+    {
+      "id": "mid_contested_north",
+      "name": "North Contested Point",
+      "position": [0.0, 0.0, -350.0],
+      "type": 0,
+      "hold_radius": 35.0,
+      "hold_duration": 15.0,
+      "defense_radius": 130.0,
+      "generation_rate": 8.0,
+      "owner_faction": -1
+    },
+    {
+      "id": "mid_contested_south",
+      "name": "South Contested Point",
+      "position": [0.0, 0.0, 350.0],
+      "type": 0,
+      "hold_radius": 35.0,
+      "hold_duration": 15.0,
+      "defense_radius": 130.0,
+      "generation_rate": 8.0,
+      "owner_faction": -1
+    }
+  ]
+}

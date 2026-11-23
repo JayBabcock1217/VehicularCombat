@@ -1,0 +1,18 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# C# build output (Godot .NET SDK emits to .godot/mono, which is covered above,
+# but plain `dotnet build` can leave these behind)
+bin/
+obj/
+*.user
+*.csproj.user
+
+# IDE metadata
+.vs/
+.idea/
+.vscode/
+
+# Blender auto-backup files
+*.blend1

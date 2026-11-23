@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://i6x5yxj4wvqw"]
+
+[ext_resource type="Script" uid="uid://0o6dj7g6fg6s" path="res://src/shared/components/AirplaneRig.cs" id="1_rig"]
+[ext_resource type="Script" uid="uid://cmkkfg11b4lgl" path="res://src/shared/components/FlightModel.cs" id="2_flight"]
+
+[node name="Airplane" type="Node3D" unique_id=1793924391]
+script = ExtResource("1_rig")
+
+[node name="FlightModel" type="Node3D" parent="." unique_id=771002331]
+script = ExtResource("2_flight")

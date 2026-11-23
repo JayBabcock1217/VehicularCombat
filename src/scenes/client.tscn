@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bsrknon6eqwse"]
+
+[ext_resource type="Script" uid="uid://emhnenle31g8" path="res://src/client/Client.cs" id="1_client"]
+[ext_resource type="Script" uid="uid://2qw7ilx31lxc" path="res://src/client/ConnectUi.cs" id="2_connectui"]
+[ext_resource type="Script" uid="uid://b1ehjvelgtbk7" path="res://src/client/Hud.cs" id="3_hud"]
+
+[node name="Server" type="Node" unique_id=173477107]
+
+[node name="Client" type="Node" parent="." unique_id=665862779]
+script = ExtResource("1_client")
+
+[node name="ConnectUi" type="CanvasLayer" parent="Client" unique_id=1179845831]
+script = ExtResource("2_connectui")
+
+[node name="Hud" type="CanvasLayer" parent="Client" unique_id=515078053]
+visible = false
+script = ExtResource("3_hud")
